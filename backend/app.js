@@ -19,11 +19,6 @@ io.on("connection", (socket) => {
         logger.info(`user ${user} joined`);
         users[sckId] = user;
         curUser = user;
-        // socket.broadcast.emit("chat message", {
-        //     system: true,
-        //     user: "System",
-        //     content: `<p>User <span class="user">${user}</span> joined! :D</p>`,
-        // });
     });
     socket.on("disconnect", () => {
         console.log(curUser + " disconnect");

@@ -17,21 +17,25 @@ function usernameThing() {
     chatUser.textContent = user;
 }
 while (user == null || user == "") {
-    user = striptags(prompt("Enter a new user"));
+    user = striptags(prompt("Enter a username"));
 }
 usernameThing();
 
-const sck = io("ws://" + window.location.hostname + ":4025", {
-    transports: ["websocket", "polling"],
-});
+const sck = io("ws://" + window.location.hostname + ":4025", {transports: ["websocket", "polling"]});
 sck.emit("user join", user);
+// ok lets find a way to run all things on the same port // css is fucked
 sck.emit("chat message", {
     system: true,
     content: `<p>User <span class="user">${user}</span> joined! :D</p>`,
 });
 
 chatUser.onclick = () => {
-    user = striptags(prompt("Enter a new user"));
+    var newUser = null;
+    while (newUser == null || newUser == "") {
+        // css
+        newUser = striptags(prompt("Enter a new username"));
+    }
+    user = newUser;
     usernameThing();
 };
 

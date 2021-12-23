@@ -1,3 +1,4 @@
 export default {
-    root: "src"
+    root: "src",
+    outDir: "../dist",
 };
