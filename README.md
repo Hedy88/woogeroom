@@ -16,6 +16,7 @@ npm run frontend
 ```
 
 **note 1**: all shit must run on the same domain.
+
 **note 2**: for make frontend shit work, put content from dist folder into a web-accessible folder of your server thing.
 
 ## license
