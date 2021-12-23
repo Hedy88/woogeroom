@@ -19,6 +19,8 @@ npm run frontend
 
 **note 2**: for make frontend shit work, put content from dist folder into a web-accessible folder of your server thing.
 
+**note 3**: check logs folder for real-time logs from backend shit (frontend shit logs not coming soon).
+
 ## license
 
 all shit is licensed under mit license, read the LICENSE SHIT BEFORE ASKING.
