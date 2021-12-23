@@ -1,0 +1,21 @@
+{
+  "name": "woogeroom",
+  "version": "1.0.0",
+  "description": "FUNNY CHAT ROOMS!",
+  "scripts": {
+    "setup": "cd backend && npm install && cd ../frontend && npm install",
+    "backend": "cd backend && npm start",
+    "frontend": "cd backend && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stilic/woogeroom.git"
+  },
+  "author": "Stilic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Stilic/woogeroom/issues"
+  },
+  "homepage": "https://github.com/Stilic/woogeroom#readme"
+}
